@@ -40,7 +40,7 @@ public class StreamLogic {
                 .map(t -> t.getTrader().getName())
                 .distinct()
                 .sorted()
-                .collect(Collectors.joining("\n"));
+                .collect(Collectors.joining(", "));
         return sortedTradersName;
     }
 

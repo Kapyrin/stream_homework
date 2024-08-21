@@ -26,32 +26,41 @@ public class PuttingIntoPractice {
         StreamLogic logic = new StreamLogic();
 
         //1. Найти все транзакции за 2011 год и отсортировать их по сумме (от меньшей к большей).
+        System.out.print("Все транзакции за 2011 год и отсортированные по сумме:");
         logic.allTransactionsFromYearSortedBySum(transactions, 2011);
 
 
+
         //2. Вывести список неповторяющихся городов, в которых работают трейдеры.
+        System.out.print("Cписок неповторяющихся городов, в которых работают трейдеры:");
         logic.listOfUniqueCitiesWhereTradersWorks(transactions);
 
         //3. Найти всех трейдеров из Кембриджа и отсортировать их по именам.
+        System.out.print("Все трейдеры из Кембриджа, отсортированные по именам: ");
         List<Trader> allTradersFromCambridgeSorted = logic.findAllTradersFromCitySorted(transactions, "Cambridge");
         System.out.println(allTradersFromCambridgeSorted);
 
 
         //4. Вернуть строку со всеми именами трейдеров, отсортированными в алфавитном порядке.
+        System.out.print("Имена трейдеров, отсортированные в алфавитном порядке ");
         String sortedByNames = logic.sortedTradersNames(transactions);
         System.out.println(sortedByNames);
 
         //5.Выяснить, существует ли хоть один трейдер из Милана.
-       logic.existOrNotTraderFromCity(transactions, "Milan");
+        System.out.print("Есть ли трейдеры из Милана?: ");
+        logic.existOrNotTraderFromCity(transactions, "Milan");
 
         //6. Вывести суммы всех транзакций трейдеров из Кембриджа.
-        logic.sumOfAllTradersTransactions(transactions,"Cambridge");
+        System.out.print("Суммы всех транзакций от трейдеров из Кембриджа: ");
+        logic.sumOfAllTradersTransactions(transactions, "Cambridge");
 
         //7. Какова максимальная сумма среди всех транзакций?
-       logic.maximumTransaction(transactions);
+        System.out.print("Максимальная сумма среди всех транзакций: ");
+        logic.maximumTransaction(transactions);
 
 
         //8. Найти транзакцию с минимальной суммой.
+        System.out.print("Минимальная сумма среди всех транзакций: ");
         logic.minimumTransaction(transactions);
     }
 
