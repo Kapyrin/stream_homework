@@ -39,6 +39,7 @@ public class PuttingIntoPractice {
 
         //4. Вернуть строку со всеми именами трейдеров, отсортированными в алфавитном порядке.
         String sortedByNames = logic.sortedTradersNames(transactions);
+        System.out.println(sortedByNames);
 
         //5.Выяснить, существует ли хоть один трейдер из Милана.
        logic.existOrNotTraderFromCity(transactions, "Milan");
