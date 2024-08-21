@@ -26,7 +26,7 @@ public class PuttingIntoPractice {
         StreamLogic logic = new StreamLogic();
 
         //1. Найти все транзакции за 2011 год и отсортировать их по сумме (от меньшей к большей).
-        logic.allTransactionsFrom2021SortedBySum(transactions, 2011);
+        logic.allTransactionsFromYearSortedBySum(transactions, 2011);
 
 
         //2. Вывести список неповторяющихся городов, в которых работают трейдеры.

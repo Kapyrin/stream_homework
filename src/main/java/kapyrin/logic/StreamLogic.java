@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class StreamLogic {
 
-    public void allTransactionsFrom2021SortedBySum(List<Transaction> transactions, int year) {
+    public void allTransactionsFromYearSortedBySum(List<Transaction> transactions, int year) {
         List<Transaction> trForYear = transactions.stream()
                 .filter(t -> t.getYear() == year)
                 .sorted(Comparator.comparing(Transaction::getValue))
