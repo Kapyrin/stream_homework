@@ -45,7 +45,7 @@ public class PuttingIntoPractice {
        logic.existOrNotTraderFromCity(transactions, "Milan");
 
         //6. Вывести суммы всех транзакций трейдеров из Кембриджа.
-        logic.sumOfAllTradersTransactions(transactions);
+        logic.sumOfAllTradersTransactions(transactions,"Cambridge");
 
         //7. Какова максимальная сумма среди всех транзакций?
        logic.maximumTransaction(transactions);
