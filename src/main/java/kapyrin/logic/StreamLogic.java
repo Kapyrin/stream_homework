@@ -26,10 +26,10 @@ public class StreamLogic {
         System.out.println(uniqueCities);
     }
 
-    public List<Trader> findAllTradersFromCambridgeSorted(List<Transaction> transactions) {
+    public List<Trader> findAllTradersFromCitySorted(List<Transaction> transactions, String city) {
         return transactions.stream()
                 .map(Transaction::getTrader)
-                .filter(t -> t.getCity().contains("Cambridge"))
+                .filter(t -> t.getCity().contains(city))
                 .sorted(Comparator.comparing(Trader::getName))
                 .distinct()
                 .collect(Collectors.toList());

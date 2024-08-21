@@ -33,7 +33,7 @@ public class PuttingIntoPractice {
         logic.listOfUniqueCitiesWhereTradersWorks(transactions);
 
         //3. Найти всех трейдеров из Кембриджа и отсортировать их по именам.
-        List<Trader> allTradersFromCambridgeSorted = logic.findAllTradersFromCambridgeSorted(transactions);
+        List<Trader> allTradersFromCambridgeSorted = logic.findAllTradersFromCitySorted(transactions, "Cambridge");
         System.out.println(allTradersFromCambridgeSorted);
 
 
