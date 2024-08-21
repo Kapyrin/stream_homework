@@ -52,7 +52,7 @@ public class PuttingIntoPractice {
 
         //6. Вывести суммы всех транзакций трейдеров из Кембриджа.
         System.out.print("Суммы всех транзакций от трейдеров из Кембриджа: ");
-        logic.sumOfAllTradersTransactions(transactions, "Cambridge");
+        logic.sumOfAllTradersTransactionsFromCity(transactions, "Cambridge");
 
         //7. Какова максимальная сумма среди всех транзакций?
         System.out.print("Максимальная сумма среди всех транзакций: ");

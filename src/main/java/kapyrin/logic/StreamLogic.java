@@ -50,7 +50,7 @@ public class StreamLogic {
         System.out.println(existTraderFromMilan);
     }
 
-    public void sumOfAllTradersTransactions(List<Transaction> transactions,String city) {
+    public void sumOfAllTradersTransactionsFromCity(List<Transaction> transactions,String city) {
         int sumOfAllTransactions = transactions.stream()
                 .filter(t -> t.getTrader().getCity().contains(city))
                 .mapToInt(Transaction::getValue)
